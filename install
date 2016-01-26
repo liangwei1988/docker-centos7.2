@@ -1,0 +1,4 @@
+yum -y install febootstrap
+#centos 7下载centos6.7的febootstrap的rpm包即可
+febootstrap -i bash -i wget -i yum -i iputils -i iproute -i man -i vim-minimal -i openssh-server -i openssh-clients centos7.2.1511 centos7.2.1511-image http://mirrors.aliyun.com/centos/7.2.1511/os/x86_64/
+cd centos7.2.1511-image  && tar -c .|docker import - centos7.2.1511-base
